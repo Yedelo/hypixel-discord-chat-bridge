@@ -259,7 +259,8 @@ const words = [
 ];
 
 function getRandomWord(length) {
-  if (length !== undefined) {
+  length = Number(length);
+  if (length) {
     const filteredWords = words.filter((word) => word.length == length);
 
     if (filteredWords.length === 0) {
