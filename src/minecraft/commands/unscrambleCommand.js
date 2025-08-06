@@ -6,7 +6,7 @@ const minecraftCommand = require("../../contracts/minecraftCommand.js");
  * @param {string} message
  * @returns {string}
  */
-const getWord = (message) => message.split(" ").pop() ?? "";
+const getWord = (message) => message.split(" ").shift() ?? "";
 
 /**
  * Returns the username
